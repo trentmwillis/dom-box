@@ -6,7 +6,16 @@ It strives to be independent of any specific front-end framework but also provid
 
 ## DOM Objects
 
-DOM Objects are inspired by the Page Object pattern from Selenium. They are simple objects that allow you to add a layer of abstraction to represent the DOM you are interested in for your tests.
+DOM Objects are inspired by the Page Object pattern from Selenium. They are simple objects that allow you to add a layer of abstraction to give semantic meaning to the DOM you are interested in for your tests.
+
+In particular, DOM Objects stive for the following:
+
+* Semantically represent the features of the UI
+* Don't make assertions
+* Can represent a portion of or the entirety of a page
+* Can return DOM Nodes or further DOM Objects
+
+These characteristics make DOM Objects a minimal abstraction that can then be composed (see below) to great effect.
 
 ## DOM Interactions
 
